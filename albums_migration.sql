@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS albums (
                                       sales DECIMAL UNSIGNED NOT NULL,
                                       PRIMARY KEY (id)
 );
+ALTER TABLE albums
+    RENAME COLUMN name TO album_name;
 
-USE codeup_test_db;
 DESCRIBE albums;
